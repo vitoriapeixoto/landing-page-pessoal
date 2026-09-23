@@ -1,0 +1,508 @@
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdf7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #841919;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 35px 20px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 150%;
+    height: 150%;
+
+    object-fit: contain;
+
+    border-radius: 15px;
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+    background-color: white;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(142, 90, 168, 0.12);
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+section h2 {
+    color: #8d0b07;
+
+    font-size: 28px;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   SOBRE MIM
+========================= */
+
+.sobre-conteudo {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    width: 100%;
+}
+
+
+/* Texto */
+
+.sobre-texto {
+    flex: 1;
+
+    text-align: left;
+}
+
+.sobre-texto p {
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* Foto */
+
+.foto-perfil {
+    width: 240px;
+    height: 240px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    border: 5px solid #8d0b07;
+
+    box-shadow: 0 5px 15px rgba(142, 90, 168, 0.20);
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   HOBBIES
+========================= */
+
+.hobbies-list {
+    display: flex;
+
+    gap: 25px;
+
+    margin-top: 20px;
+}
+
+.hobby {
+    flex: 1;
+
+    background-color: #f9edf7;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #8d0b07;
+
+    transition: 0.3s;
+}
+
+.hobby:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(142, 90, 168, 0.15);
+}
+
+.hobby h3 {
+    color: #8d0b07;
+
+    margin-bottom: 10px;
+
+    font-size: 21px;
+}
+
+.hobby p {
+    color: #555;
+}
+
+
+/* =========================
+   LIVROS
+========================= */
+
+.livros {
+    margin-top: 40px;
+}
+
+.livros h2 {
+    font-size: 25px;
+}
+
+
+/* Container dos livros */
+
+.livros-container {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: stretch;
+
+    gap: 20px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   CARDS DOS LIVROS
+========================= */
+
+.livro-card {
+    flex: 1;
+
+    min-width: 0;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+.livro-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(142, 90, 168, 0.25);
+}
+
+
+/* Imagem dos livros */
+
+.livro-card img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Informações */
+
+.livro-info {
+    padding: 18px;
+
+    min-height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.livro-info h3 {
+    color: #8d0b07;
+
+    font-size: 18px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   CONHECIMENTOS
+========================= */
+
+.conhecimentos p {
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+.conhecimentos ul {
+    margin-top: 15px;
+
+    padding-left: 25px;
+}
+
+.conhecimentos li {
+    margin-bottom: 8px;
+
+    color: #555;
+}
+
+.conhecimentos li::marker {
+    color: #8d0b07;
+}
+
+
+/* =========================
+   OBJETIVO
+========================= */
+
+.objetivo {
+    border-top: 5px solid #8d0b07;
+}
+
+.objetivo p {
+    color: #555;
+
+    text-align: center;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #8d0b07;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 900px) {
+
+    /* Sobre mim */
+
+    .sobre-conteudo {
+        gap: 25px;
+    }
+
+    .foto-perfil {
+        width: 210px;
+        height: 210px;
+    }
+
+
+    /* Livros */
+
+    .livros-container {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .livro-card {
+        flex: 0 1 calc(50% - 15px);
+
+        max-width: 300px;
+    }
+
+    .livro-card img {
+        height: 280px;
+    }
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    header {
+        padding: 25px 20px;
+    }
+
+
+    /* Logo */
+
+    .logo {
+        width: 130px;
+        height: 130px;
+    }
+
+
+    /* Conteúdo */
+
+    main {
+        width: 94%;
+
+        margin: 25px auto;
+    }
+
+
+    /* Seções */
+
+    section {
+        padding: 20px;
+    }
+
+
+    /* Títulos */
+
+    section h2 {
+        font-size: 24px;
+    }
+
+
+    /* Sobre mim */
+
+    .sobre-conteudo {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 25px;
+    }
+
+    .sobre-texto {
+        text-align: center;
+    }
+
+    .sobre-texto p {
+        font-size: 16px;
+    }
+
+
+    /* Foto */
+
+    .foto-perfil {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    /* Hobbies */
+
+    .hobbies-list {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    /* Livros */
+
+    .livros-container {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+    }
+
+    .livro-card {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+    .livro-card img {
+        height: 320px;
+    }
+
+
+    /* Objetivo */
+
+    .objetivo p {
+        font-size: 16px;
+    }
+}
